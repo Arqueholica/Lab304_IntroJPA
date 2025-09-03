@@ -8,6 +8,12 @@ public class Lab304IntroJpaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Lab304IntroJpaApplication.class, args);
+
+
+
+
 	}
+
+
 
 }

@@ -58,4 +58,14 @@ private CustomerStatus customerStatus;
     public void setCustomerStatus(CustomerStatus customerStatus) {
         this.customerStatus = customerStatus;
     }
+
+
+    @Override
+    public String toString() {
+        return "CUSTOMER" + '\n' +
+                "Customer Id: " + customerId + '\n' +
+                "Customer Name: " + customerName + '\n' +
+                "Total Customer Mileage: " + totalCustomerMileage + '\n' +
+                "Customer Status: " + customerStatus + '\n';
+    }
 }

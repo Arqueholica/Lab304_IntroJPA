@@ -1,0 +1,12 @@
+package com.ironhack.Lab304_IntroJPA.repository;
+
+import com.ironhack.Lab304_IntroJPA.models.Customer;
+import com.ironhack.Lab304_IntroJPA.models.CustomerStatus;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface CustomerRepository extends JpaRepository<Customer, String> {
+    List<Customer> findByCustomerName(String customerName);
+    List<Customer> findByCustomerStatus(CustomerStatus status);
+}
