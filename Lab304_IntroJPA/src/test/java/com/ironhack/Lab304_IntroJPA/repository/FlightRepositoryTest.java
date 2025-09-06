@@ -16,6 +16,13 @@ class FlightRepositoryTest {
     FlightRepository flightRepository;
 
 
+@Test
+void new_Flight(){
+    Flight newFlight = new Flight("DOPE85", "Boeing 75", 258, 6855);
+    flightRepository.save(newFlight);
+}
+
+
     @Test
     void findByFlightNumber_numberOK() {
         Optional<Flight> flightNumOK = flightRepository.findByFlightNumber("DL53");
