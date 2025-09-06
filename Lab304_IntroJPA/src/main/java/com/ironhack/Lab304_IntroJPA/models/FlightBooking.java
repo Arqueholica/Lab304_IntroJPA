@@ -1,11 +1,13 @@
 package com.ironhack.Lab304_IntroJPA.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+
+//VAMOS A CAMBIAR ALGO PARA QUE EL PULLREQUEST FUNCIONE
+
+
+
 public class FlightBooking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
